@@ -142,7 +142,8 @@ def run_report(org, env, start_time, end_time, display_name, manual_token=None, 
             ],
             "timeRange": chunk,
             "mimeType": "json",
-            "displayName": current_name
+            "displayName": current_name,
+            "groupByTimeUnit": "minute"
         }
         
         print(f"Creating report job: {current_name}")
