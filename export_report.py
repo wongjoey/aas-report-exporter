@@ -54,8 +54,8 @@ def chunk_time_range(start_str, end_str):
     chunks = []
     current_start = start_dt
     
-    # Use strictly 14 days as max range
-    max_delta = timedelta(days=14)
+    # Use strictly 90 days as max range
+    max_delta = timedelta(days=90)
     
     while current_start < end_dt:
         current_end = current_start + max_delta
