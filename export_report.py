@@ -131,8 +131,9 @@ def run_report(org, env, start_time, end_time, display_name, manual_token=None, 
         payload = {
             "metrics": [{"name":"bot_traffic","aggregationFunction":"sum"}],
             "dimensions": [
-                "ax_resolved_client_ip",
                 "bot_reason",
+                "ax_resolved_client_ip",
+                "apiproxy",
                 "request_uri",
                 "request_verb",
                 "response_status_code",
